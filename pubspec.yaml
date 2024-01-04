@@ -37,6 +37,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   scroll_snap_list: ^0.9.1
   simple_animations: ^5.0.2
+  like_button: ^2.0.5
+  carousel_slider: ^4.2.1
 
 dev_dependencies:
   flutter_test:
@@ -71,6 +73,8 @@ flutter:
     - assets/image/
     - assets/logins/
     - assets/landingpage/
+    - assets/image/descriptionpage/
+    - assets/image/homescreen/
 
     
 

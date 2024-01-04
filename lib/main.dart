@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:newui/screens/login/login_page.dart';
-
+import 'package:newui/widgets/navigationbar/navbar.dart';
+///import 'package:newui/widgets/login/login_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
         fontFamily: "Open-Sans",
       ),
-      home: LoginWidget(),
+      home: navigationpage(),
     );
   }
 }
