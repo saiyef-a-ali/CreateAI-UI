@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:newui/widgets/favourites/presentation/screens/ui/saved.dart';
 import 'package:newui/widgets/home_screen.dart';
 import 'package:newui/widgets/homescreen/presentation/screens/ui/home_page.dart';
 import 'package:newui/widgets/navigationbar/acct.dart';
-import 'package:newui/widgets/navigationbar/set.dart';
 
 
 class navigationpage extends StatefulWidget {
@@ -14,8 +14,8 @@ class navigationpage extends StatefulWidget {
 class navigationpageState extends State<navigationpage> {
   List<Widget> pages = [
     mainHomePage(title: 'home screen',),
+    favouritesPage(title: 'fav',),
     HomeScreen(),
-    SettingsScreen(),
     AccountScreen(),
   ];
 
@@ -27,10 +27,10 @@ class navigationpageState extends State<navigationpage> {
     return Scaffold(
       body: pages[currentIndex],
       bottomNavigationBar: Container(
-        margin: EdgeInsets.all(displayWidth * .05),
-        height: displayWidth * .155,
+        margin: EdgeInsets.all(displayWidth * .02),
+        height: displayWidth * .100,
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: Colors.transparent,
           boxShadow: [
             BoxShadow(
               color: Colors.black.withOpacity(.1),
@@ -138,16 +138,16 @@ class navigationpageState extends State<navigationpage> {
   }
 
   List<IconData> listOfIcons = [
-    Icons.home_rounded,
-    Icons.favorite_rounded,
-    Icons.settings_rounded,
-    Icons.person_rounded,
+    Icons.home_outlined,
+    Icons.bookmarks_outlined,
+    Icons.trending_up_outlined,
+    Icons.person_outlined,
   ];
 
   List<String> listOfStrings = [
     'Home',
     'Favorite',
-    'Settings',
+    'trending',
     'Account',
   ];
 }

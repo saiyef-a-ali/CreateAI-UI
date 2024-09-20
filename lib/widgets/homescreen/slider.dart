@@ -44,7 +44,7 @@ class _SliderScreenState extends State<SliderScreen> {
                 options: CarouselOptions(
                   scrollPhysics: const BouncingScrollPhysics(),
                   autoPlay: true,
-                  aspectRatio: 2,
+                  aspectRatio: 1.8,
                   viewportFraction: 1,
                   onPageChanged: (index, reason) {
                     setState(() {
